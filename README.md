@@ -35,7 +35,11 @@ Ideal Use Cases
 Built With
 
 1.Python
+
 2.LangChain
+
 3.Groq API (Gemma2-9b-It)
+
 4.dotenv
+
 5.Jupyter Notebook

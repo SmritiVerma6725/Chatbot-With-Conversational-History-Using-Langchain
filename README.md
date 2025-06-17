@@ -27,9 +27,13 @@ The notebook walks through the entire process—from setting up the model to bui
 Ideal Use Cases
 
 1.Personal AI Assistants
+
 2.Customer Support Bots
+
 3.Prototypes for Memory-Enabled RAG Systems
+
 4.Conversational Interfaces for LLM Apps
+
 5.Education & Learning Projects in AI/LLM Development
 
 Built With

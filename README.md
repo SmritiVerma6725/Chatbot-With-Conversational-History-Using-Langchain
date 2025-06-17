@@ -30,6 +30,7 @@ Ideal Use Cases
 5.Education & Learning Projects in AI/LLM Development
 
 Built With
+
 1.Python
 2.LangChain
 3.Groq API (Gemma2-9b-It)

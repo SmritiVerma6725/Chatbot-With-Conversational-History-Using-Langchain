@@ -1,9 +1,11 @@
 # Chatbot-With-Conversational-History-Using-Langchain
 
 LLM-Powered Chatbot with Memory (LangChain + Groq)
+
 This project demonstrates how to build an intelligent chatbot using LangChain and Groq’s LLM (Gemma2-9b-It). Unlike basic chatbots, this implementation supports conversational memory, allowing it to maintain context across messages and simulate more natural interactions.
 
 Key Features
+
 1.Conversational Memory
 Uses RunnableWithMessageHistory to store and recall user inputs across turns, enabling the chatbot to answer follow-up questions contextually.
 
@@ -23,6 +25,7 @@ Uses trim_messages to control how much of the conversation history is passed to 
 The notebook walks through the entire process—from setting up the model to building memory-aware chains and managing conversation history.
 
 Ideal Use Cases
+
 1.Personal AI Assistants
 2.Customer Support Bots
 3.Prototypes for Memory-Enabled RAG Systems

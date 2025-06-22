@@ -53,14 +53,6 @@ Python 3.10+
 
 pip
 
-(Optional) CUDA-enabled GPU for local inference
-
-Installation
-bash
-git clone https://github.com/yourusername/conversational-rag-chatbot.git
-cd conversational-rag-chatbot
-pip install -r requirements.txt
-Environment Variables
 Create a .env file in the project root and add your API keys:
 
 text
@@ -103,24 +95,6 @@ Chroma and FAISS enable fast, approximate nearest neighbor search for relevant d
 
 Prompt Templates:
 System and user prompts are engineered for clarity, safety, and role alignment.
-
-Example: Creating a Vector Database from PDFs
-python
-from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceBgeEmbeddings
-from langchain.vectorstores import Chroma
-
-loader = DirectoryLoader("Data/", glob="**/*.pdf", loader_cls=PyPDFLoader)
-documents = loader.load()
-splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
-texts = splitter.split_documents(documents)
-embeddings = HuggingFaceBgeEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
-vector_db = Chroma.from_documents(texts, embeddings, persist_directory='./chroma_db')
-vector_db.persist()
-Best Practices
-Environment Security:
-Store API keys in .env files, never in code.
 
 Error Handling:
 All user-facing functions include try/except blocks for graceful failure and debugging.
